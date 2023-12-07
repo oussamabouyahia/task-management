@@ -9,18 +9,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 
-type TaskType = {
-  _id: number;
-  title: string;
-  description: string;
-  due_date: string;
-  completed: boolean;
-};
-type TasksProps = {
-  list: TaskType[];
-  setList: (value: TaskType[]) => void;
-};
-const AddTask = ({ list, setList }: TasksProps) => {
+const AddTask = () => {
   const [input, setInput] = useState({
     title: "",
     description: "",

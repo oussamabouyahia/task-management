@@ -34,10 +34,7 @@ function App() {
             path="/task"
             element={<ListOfTask list={list} setList={setList} />}
           />
-          <Route
-            path="/add"
-            element={<AddTask list={list} setList={setList} />}
-          />
+          <Route path="/add" element={<AddTask />} />
         </Routes>
       </BrowserRouter>
     </>
